@@ -606,7 +606,7 @@ INÍCIO DA PROGRAMAÇÃO
 ------------------------------------
 
 >TSSB20{TSBL9999}{TSFN2}{TTXT,08,01,PARA-CHOQUES}{TTXT,08,02,ESTAO}{TTXT,08,03,PRESENTES}{TTXT,08,04,E INTEGROS?}{TSFN0}{TTXM,85,01,gSIM-mf}{TXM,85,05,gNAO-mf}<
->TSSE2000 CB15++ +- SGN NN {TSSC21}{SCTxx 1}< //Encaminha para a próxima pergunta (tela 20) e registra a resposta no CTxx
+>TSSE2000 CB15++ +- SGN NN {TSSC21}{SCTxx 1}< //Encaminha para a próxima pergunta (tela 21) e registra a resposta no CTxx
 >TSSE2001 CB13++ +- SGN NN {TSSC21}{SCTxx 0}<
 
 --------------------------------------------
@@ -614,7 +614,7 @@ INÍCIO DA PROGRAMAÇÃO
 --------------------------------------------
 
 >TSSB21{TSBL9999}{TSFN2}{TTXT,08,01,LIMPADOR DE}{TTXT,08,02,PARA-BRISA}{TTXT,08,03,FUNCIONANDO?}{TSFN0}{TTXM,85,01,gSIM-mf}{TXM,85,05,gNAO-mf}<
->TSSE2100 CB15++ +- SGN NN {TSSC22}{SCTxx 1}< //Encaminha para a próxima pergunta (tela 20) e registra a resposta no CTxx
+>TSSE2100 CB15++ +- SGN NN {TSSC22}{SCTxx 1}< //Encaminha para a próxima pergunta (tela 22) e registra a resposta no CTxx
 >TSSE2101 CB13++ +- SGN NN {TSSC22}{SCTxx 0}<
 
 --------------------------------------------------------
@@ -622,7 +622,7 @@ INÍCIO DA PROGRAMAÇÃO
 --------------------------------------------------------
 
 >TSSB22{TSBL9999}{TSFN2}{TTXT,08,01,LANTERNAS,}{TTXT,08,02,FAROIS,}{TTXT,08,03,LUZ DE FREIO}{TTXT,08,04,E RE ESTAO}{TTXT,08,05,FUNCIONANDO?}{TSFN0}{TTXM,85,01,gSIM-mf}{TXM,85,05,gNAO-mf}<
->TSSE2200 CB15++ +- SGN NN {TSSC23}{SCTxx 1}< //Encaminha para a próxima pergunta (tela 20) e registra a resposta no CTxx
+>TSSE2200 CB15++ +- SGN NN {TSSC23}{SCTxx 1}< //Encaminha para a próxima pergunta (tela 23) e registra a resposta no CTxx
 >TSSE2201 CB13++ +- SGN NN {TSSC23}{SCTxx 0}<
 
 ------------------------------
@@ -630,7 +630,7 @@ INÍCIO DA PROGRAMAÇÃO
 ------------------------------
 
 >TSSB23{TSBL9999}{TSFN2}{TTXT,08,01,PNEUS}{TTXT,08,02,(ESTADO DE}{TTXT,08,03,CONSERVACAO)}{TTXT,08,04,E ESTEPE}{TTXT,08,05,ESTAO}{TTXT,08,06,ADEQUADOS?}{TSFN0}{TTXM,85,01,gSIM-mf}{TXM,85,05,gNAO-mf}<
->TSSE2300 CB15++ +- SGN NN {TSSC24}{SCTxx 1}< //Encaminha para a próxima pergunta (tela 20) e registra a resposta no CTxx
+>TSSE2300 CB15++ +- SGN NN {TSSC24}{SCTxx 1}< //Encaminha para a próxima pergunta (tela 24) e registra a resposta no CTxx
 >TSSE2301 CB13++ +- SGN NN {TSSC24}{SCTxx 0}<
 
 ------------------------------------------
@@ -638,28 +638,37 @@ INÍCIO DA PROGRAMAÇÃO
 ------------------------------------------
 
 >TSSB24{TSBL9999}{TSFN2}{TTXT,08,01,A FOLGA}{TTXT,08,02,DA DIRECAO}{TTXT,08,03,ESTA OK?}{TSFN0}{TTXM,85,01,gSIM-mf}{TXM,85,05,gNAO-mf}<
->TSSE2400 CB15++ +- SGN NN {TSSC25}{SCTxx 1}< //Encaminha para a próxima pergunta (tela 20) e registra a resposta no CTxx
+>TSSE2400 CB15++ +- SGN NN {TSSC25}{SCTxx 1}< //Encaminha para a próxima pergunta (tela 25) e registra a resposta no CTxx
 >TSSE2401 CB13++ +- SGN NN {TSSC25}{SCTxx 0}<
 
 ------------------------------------------
 - TELA 25: CHECKLIST - DIREÇÃO FUNCIONAL -
 ------------------------------------------
 >TSSB25{TSBL9999}{TSFN2}{TTXT,08,01,A FOLGA}{TTXT,08,02,DA DIRECAO}{TTXT,08,03,ESTA OK?}{TSFN0}{TTXM,85,01,gSIM-mf}{TXM,85,05,gNAO-mf}<
->TSSE2500 CB15++ +- SGN NN {TSSC26}{SCTxx 1}< //Encaminha para a próxima pergunta (tela 20) e registra a resposta no CTxx
+>TSSE2500 CB15++ +- SGN NN {TSSC26}{SCTxx 1}< //Encaminha para a próxima pergunta (tela 26) e registra a resposta no CTxx
 >TSSE2501 CB13++ +- SGN NN {TSSC26}{SCTxx 0}<
 
 --------------------------------
 - TELA 26: CHECKLIST - CAÇAMBA -
 --------------------------------
 >TSSB26{TSBL9999}{TSFN2}{TTXT,08,01,CACAMBA EM}{TTXT,08,02,CONDICOES}{TTXT,08,03,ADEQUADAS?}{TTXT,08,04,(TRAVA DA}{TTXT,08,05,TAMPA)}{TSFN0}{TTXM,85,01,gSIM-mf}{TXM,85,05,gNAO-mf}<
->TSSE2600 CB15++ +- SGN NN {TSSC27}{SCTxx 1}< //Encaminha para a próxima pergunta (tela 20) e registra a resposta no CTxx
+>TSSE2600 CB15++ +- SGN NN {TSSC27}{SCTxx 1}< //Encaminha para a próxima pergunta (tela 27) e registra a resposta no CTxx
 >TSSE2601 CB13++ +- SGN NN {TSSC27}{SCTxx 0}<
 
 --------------------------------
 - TELA 27: SELEÇÃO DE MATERIAL -
 --------------------------------
 >TSSB27{TSBL90}{TSFN2}{TTXT,00,00,SELECIONE O MATERIAL}{TTXM,00,02,01 - SOLO}{TTXM,00,03,02 - ROCHA}{TTXM,00,04,03 - BRITA}{TTXM,00,05,04 - AREIA}<
->TSSE2700 IN43++ +- SGN NN {TSSC27}{SCTxx 1}< //Encaminha para a próxima pergunta (tela 20) e registra a resposta no CTxx
->TSSE2701 IN44++ +- SGN NN {TSSC27}{SCTxx 0}<
->TSSE2701 IN45++ +- SGN NN {TSSC27}{SCTxx 0}<
->TSSE2701 IN46++ +- SGN NN {TSSC27}{SCTxx 0}<
+>TSSE2700 IN49++ +- SGN NN {TSSC28}{SCTxx 1}< //Encaminha para a próxima pergunta (tela 28) e registra a resposta no CTxx
+>TSSE2701 IN50++ +- SGN NN {TSSC28}{SCTxx 2}<
+>TSSE2702 IN51++ +- SGN NN {TSSC28}{SCTxx 3}<
+>TSSE2703 IN52++ +- SGN NN {TSSC28}{SCTxx 4}<
+
+------------------------------
+- TELA XX: SELEÇÃO DE MODELO -
+------------------------------
+>TSSBXX{TSBL90}{TSFN2}{TTXT,00,00,SELECIONE O MODELO}{TTXT,00,02, 01 - ESCAVADEIRA}{TTXT,00,03, 02 - CARREGADEIRA}{TTXT,00,04, 03 - USINA ASFALTO}{TTXT,00,05, 04 - RETROESCAVADEIRA}<
+>TSSE6101 LB49++ +- SGN NN {SCTXX 1}{TSSCXX}< //MODELO 1- ESCAVADEIRA
+>TSSE6102 LB50++ +- SGN NN {SCTXX 2}{TSSCXX}< //MODELO 2- CARREGADEIRA 
+>TSSE6103 LB51++ +- SGN NN {SCTXX 3}{TSSCXX}< //MODELO 3- USINA ASFALTO
+>TSSE6104 LB52++ +- SGN NN {SCTXX 4}{TSSCXX}< //MODELO 4- RETROESCAVADEIRA
