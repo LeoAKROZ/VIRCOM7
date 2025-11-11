@@ -656,14 +656,41 @@ INÍCIO DA PROGRAMAÇÃO
 >TSSE2600 CB15++ +- SGN NN {TSSC27}{SCTxx 1}< //Encaminha para a próxima pergunta (tela 27) e registra a resposta no CTxx
 >TSSE2601 CB13++ +- SGN NN {TSSC27}{SCTxx 0}<
 
---------------------------------
-- TELA 27: SELEÇÃO DE MATERIAL -
---------------------------------
+
+-------------------------------CAMINHÕES BASCULANTES-------------------------------
+
+-----------------------------------------
+- TELA 27: EVENTO - SELEÇÃO DE MATERIAL -
+-----------------------------------------
+SED0xx IN04++&&IN07++ +- SGN NN {TSSC27} //Adicionado o evento presumindo que EV02 se refere a IN04 - CARGA
+
 >TSSB27{TSBL90}{TSFN2}{TTXT,00,00,SELECIONE O MATERIAL}{TTXM,00,02,01 - SOLO}{TTXM,00,03,02 - ROCHA}{TTXM,00,04,03 - BRITA}{TTXM,00,05,04 - AREIA}<
 >TSSE2700 IN49++ +- SGN NN {TSSC28}{SCTxx 1}< //Encaminha para a próxima pergunta (tela 28) e registra a resposta no CTxx
 >TSSE2701 IN50++ +- SGN NN {TSSC28}{SCTxx 2}<
 >TSSE2702 IN51++ +- SGN NN {TSSC28}{SCTxx 3}<
 >TSSE2703 IN52++ +- SGN NN {TSSC28}{SCTxx 4}<
+
+
+--------------------------------------
+- TELA XX: EVENTO - SELEÇÃO DE LOCAL -
+--------------------------------------
+
+SED0xx IN05++&&IN07++ +- SGN NN {TSSCXX} //EVENTO QUE REDIRECIONA PARA A TELA DE SELEÇÃO DE LOCAL AO PRESSIONAR EV03 - DESCARGA
+
+TSSBXX{TSBL90}{TSFN2}{TTXT,00,01,LOCAL DESCARGA?}{TTXM,00,03,1-PATIO A}{TTXM,00,05,2-PATIO B}{TTXM,00,07,3-PATIO C}
+TSSEXX00 LB49++ +- SGN NN {SCTXX 1}{TSSC42}
+TSSEXX00 LB50++ +- SGN NN {SCTXX 2}{TSSC42}
+TSSEXX00 LB51++ +- SGN NN {SCTXX 3}{TSSC42}  
+
+
+-------------------------------CAMINHÕES BETONEIRAS-------------------------------
+
+---------------------------------------
+- TELA XX: EVENTO - SELEÇÃO DE VOLUME -
+---------------------------------------
+
+TSSB42{TSBL90}{TSFN2}{TTXT,15,01,VOLUME (M3)?}{TSDE01,30,03,00000}{TTXM,80,03,CONFIRMAR-m}
+
 
 ------------------------------
 - TELA XX: SELEÇÃO DE MODELO -
